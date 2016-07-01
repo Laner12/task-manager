@@ -1,0 +1,7 @@
+<form class="form-inline" action="/tasks/<% @task.id %>" method="post">
+  <h3>Edit</h3>
+  <input type="hidden" name="_method" value="PUT">
+  <input type="text" name="task[title]" value="<% @task.title %>">
+  <textarea name="task[description]" value="<% @task.description %>"></textarea>
+    <input class="btn btn-default" type="submit"/>
+</form>
